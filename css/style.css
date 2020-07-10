@@ -1,0 +1,484 @@
+/* fonts  */
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('../fonts/BrandonGrotesque-Bold.eot');
+    src: local('../fonts/Brandon Grotesque Bold'), local('BrandonGrotesque-Bold'),
+        url('../fonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrandonGrotesque-Bold.woff') format('woff'),
+        url('../fonts/BrandonGrotesque-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('../fonts/BrandonGrotesque-Light.eot');
+    src: local('../fonts/Brandon Grotesque Light'), local('BrandonGrotesque-Light'),
+        url('../fonts/BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrandonGrotesque-Light.woff') format('woff'),
+        url('../fonts/BrandonGrotesque-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('../fonts/BrandonGrotesque-Medium.eot');
+    src: local('../fonts/Brandon Grotesque Medium'), local('BrandonGrotesque-Medium'),
+        url('../fonts/BrandonGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrandonGrotesque-Medium.woff') format('woff'),
+        url('../fonts/BrandonGrotesque-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('../fonts/BrandonGrotesque-Regular.eot');
+    src: local('../fonts/Brandon Grotesque Regular'), local('BrandonGrotesque-Regular'),
+        url('../fonts/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrandonGrotesque-Regular.woff') format('woff'),
+        url('../fonts/BrandonGrotesque-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Brandon Grotesque';
+}
+
+/*==========================
+common css
+========================= */
+.section-padding{
+    padding: 100px 0;
+}
+.container{
+    width: 950px;
+    margin: 0 auto;
+}
+.section-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center!important;
+}
+.btn{
+    font-size: 23px;
+    font-weight: 700;
+    color: #fff;
+    padding: 15px 55px;
+}
+.btn-outline{
+    border: 3px solid #fff;
+    border-radius: 5px;
+}
+.w-20{
+    width: 20%;
+}
+.w-33{
+    width: 33.333%;
+}
+.w-40{
+    width: 40%;
+}
+.w-50{
+    width: 50%;
+}
+.w-60{
+    width: 60%;
+}
+.w-70{
+    width: 70%;
+}
+.w-80{
+    width: 80%;
+}
+.w-100{
+max-width: 100%;
+}
+.section-title{
+    color: #222222;
+    text-align: left;
+    padding: 20px;
+}
+.section-title h2{
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+.section-title h2 span{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.section-title small{
+    font-size: 20px;
+    font-weight: 400;
+    color: #777777;
+    text-transform: capitalize;
+}
+.bg-light{
+    background-color: #ecebeb;
+}
+.p-20{
+    padding: 20px;
+}
+.pr-20{
+    padding-right: 20px;
+}
+.pb-80{
+    padding-bottom: 80px!important;
+}
+/*==========================
+header-area css
+========================= */
+.header-absolute{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.header-area{
+display: flex;
+justify-content: space-between;
+}
+.header-area .logo{
+    font-weight: 700;
+    padding: 43px 0;
+}
+.header-area .logo i.fa{
+    font-size: 28px;
+    margin-right: 5px;
+    color: #fff;
+}
+.header-area .logo a{
+    font-size: 28px;
+    color: #fff;
+}
+.header-area .menu ul{
+    display: flex;
+}
+.header-area .menu ul li{
+    padding: 50px 13px;
+}
+.header-area .menu ul li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/*==========================
+hero-area css
+========================= */
+.hero-area{
+    background:linear-gradient( rgba(115, 71, 236, 0.2), rgba(0,0,0,0.3)),url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.hero-area-text{
+    color: #fff;
+}
+.hero-area-text h3{
+    font-size: 36px;
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+.hero-area-text h1{
+    font-size: 96px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+/*==========================
+hero-area css
+========================= */
+.work-area{
+    padding-top: 80px;
+}
+.work-text p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #777777;
+    padding: 10px;
+}
+.work-img{
+    margin: 50px 0;
+}
+/*==========================
+service-area css
+========================= */
+.service-area{
+    margin: -25px 0;
+}
+.single-service{
+    display: flex;
+    padding: 25px 0;
+}
+.service-icon{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+.service-icon img{
+    width: 70px;
+    height: 100%;
+}
+.service-info h4{
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    color: #222222;
+}
+.service-info p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #777777;
+}
+
+/*==========================
+clients-area css
+========================= */
+.clients-img{
+    margin-bottom: 60px;
+}
+.clients-img img{
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+}
+.clients-text{
+    padding: 40px 100px;
+    background: #fff;
+    color: ;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 60px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.212);
+}
+.shape-left{
+    position: relative;
+}
+.shape-left::before{
+    position: absolute;
+    content: "";
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid #fff;
+    border-bottom: 50px solid transparent;
+}
+.shape-right{
+    position: relative;
+}
+.shape-right::after{
+    position: absolute;
+    content: "";
+    right: -25px;
+    top: 25%;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid #fff;
+    border-bottom: 50px solid transparent;
+}
+.clients-text p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #777777;
+    margin-bottom: 10px;
+}
+.clients-text span{
+    font-size: 16px;
+    color: #7690c5;
+    position: relative;
+    margin-left: 25px;
+}
+.clients-text span::before{
+    position: absolute;
+    content: "";
+    left: -20px;
+    top: 50%;
+    width: 15px;
+    height: 2px;
+    background: #7690c5;
+}
+
+
+/*==========================
+brand-area css
+========================= */
+.brand-area{
+    padding: 40px 0;
+}
+.single-brand{
+    width: 25%;
+    padding: 10px;
+    height: 65px;
+}
+/*==========================
+team-area css
+========================= */
+.team-area{
+    background: #111111;
+}
+.team-area .section-title{
+    color: #fff;
+}
+.single-team-member {
+    padding: 30px;
+    text-align: center;
+}
+.single-team-member img{
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+.single-team-info{
+    margin-top: 20px;
+    color: #fff;
+}
+.single-team-info h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+.single-team-info span{
+    padding: 5px 0;
+    display: inline-block;
+}
+.team-social-link i.fab{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    line-height: 50px;
+    font-size: 26px;
+}
+.team-area p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #ebebeb;
+    padding: 20px 200px;
+}
+
+
+/*==========================
+footer-area css
+========================= */
+.footer-area{
+    background: #7690c5;
+    color: #fff;
+}
+.footer-text .section-title{
+    color: #fff;
+    padding: 0;
+    padding-bottom: 30px;
+}
+.footer-text .section-title h2{
+    text-transform: capitalize!important;
+}
+.footer-text p{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.footer-social-link{
+    display: flex;
+    flex-wrap: wrap;
+}
+.single-link-item {
+    display: flex;
+}
+.single-link-item  i{
+    font-size: 28px;
+    width: 50px;
+}
+.footer-form input,
+.footer-form textarea{
+    padding: 20px;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 16px;
+}
+.copy-right-section{
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.295);
+}
+.copy-right-section p span{
+    color: rgb(7, 5, 5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
